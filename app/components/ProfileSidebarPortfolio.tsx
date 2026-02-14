@@ -8,7 +8,7 @@ const ProfileSidebarPortfolio: React.FC = () => {
         <ul className="text-sm text-gray-700 space-y-3">
           <li className="flex items-start gap-3">
             <strong>Email:</strong>
-            <span className="text-gray-600">rosallie@example.com</span>
+            <span className="text-gray-600">habusayaf@example.com</span>
           </li>
           <li className="flex items-start gap-3">
             <strong>Location:</strong>

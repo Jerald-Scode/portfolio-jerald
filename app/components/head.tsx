@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,16 +16,20 @@ interface HeadProps {
   countLikes?: number;
   position?: string;
   location?: string;
+  activeTab?: string;
+  onTabChange?: (tab: string) => void;
 }
 
 const Head: React.FC<HeadProps> = ({
   coverImage = "/header-img/Cartoon Motorcyle.png",
   imageSrc = "/header-img/jeep drive.jpg",
-  fullName = "Habusayaf Abdulah",
+  fullName = "Habusayaf",
   bio = "A passionate web developer with a knack for creating dynamic and responsive websites.",
   countLikes = 0,
   position = "Web Developer",
   location = "Tagaytay City, Philippines",
+  activeTab = "all",
+  onTabChange,
 }) => {
   return (
     <header className="relative flex flex-col items-center justify-center gap-4 pr-6 pl-6 pb-12 bg-gradient-to-b from-gray-100 to-gray-200 shadow-md">
@@ -47,9 +53,9 @@ const Head: React.FC<HeadProps> = ({
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <div>
                 <h1 className="text-gray-800 font-bold text-lg sm:text-xl mb-1">
-                  {fullName}{" "}
+                  {fullName}
                   <span className="text-gray-400 font-normal hidden sm:inline">
-                    (Sallie)
+                    (Bunso)
                   </span>
                 </h1>
                 <p className="text-gray-600 text-xs sm:text-sm mb-2">{bio}</p>
@@ -100,12 +106,46 @@ const Head: React.FC<HeadProps> = ({
             {/* Tabs (portfolio-focused) */}
             <nav className="mt-4 border-t pt-3 overflow-x-auto">
               <ul className="flex gap-6 text-sm text-gray-600 whitespace-nowrap">
-                <li className="border-b-2 border-blue-600 pb-2">All</li>
-                <li className="pb-2">About</li>
-                <li className="pb-2">Projects</li>
-                <li className="pb-2">Skills</li>
-                <li className="pb-2">Contact</li>
-                <li className="pb-2">More ▾</li>
+                <li>
+                  <button
+                    onClick={() => onTabChange?.("all")}
+                    className={`pb-2 ${activeTab === "all" ? "border-b-2 border-blue-600" : ""}`}
+                  >
+                    All
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => onTabChange?.("about")}
+                    className={`pb-2 ${activeTab === "about" ? "border-b-2 border-blue-600" : ""}`}
+                  >
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => onTabChange?.("projects")}
+                    className={`pb-2 ${activeTab === "projects" ? "border-b-2 border-blue-600" : ""}`}
+                  >
+                    Projects
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => onTabChange?.("skills")}
+                    className={`pb-2 ${activeTab === "skills" ? "border-b-2 border-blue-600" : ""}`}
+                  >
+                    Skills
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => onTabChange?.("contact")}
+                    className={`pb-2 ${activeTab === "contact" ? "border-b-2 border-blue-600" : ""}`}
+                  >
+                    Contact
+                  </button>
+                </li>
               </ul>
             </nav>
           </div>
