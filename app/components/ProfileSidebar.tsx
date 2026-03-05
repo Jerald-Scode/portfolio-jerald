@@ -21,7 +21,7 @@ export const ProfileSidebar: React.FC = () => {
                 d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            <span>April 12, 2002</span>
+            <span>January 26, 2002</span>
           </li>
           <li className="flex items-center gap-3">
             <svg
