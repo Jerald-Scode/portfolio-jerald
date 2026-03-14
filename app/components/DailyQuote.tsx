@@ -33,17 +33,17 @@ const DailyQuote: React.FC = () => {
       className="glass rounded-2xl p-6 relative overflow-hidden"
     >
       {/* Decorative gradient blob */}
-      <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-full blur-2xl" />
+      <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-[#4C8CE4]/25 to-[#7B61FF]/20 rounded-full blur-2xl" />
 
       <div className="flex items-start gap-4 relative z-10">
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center shrink-0 mt-1">
+        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#4C8CE4]/25 to-[#7B61FF]/20 flex items-center justify-center shrink-0 mt-1">
           <FontAwesomeIcon
             icon={faQuoteLeft}
-            className="w-4 h-4 text-indigo-400"
+            className="w-4 h-4 text-[#4C8CE4]"
           />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs text-indigo-400 font-medium uppercase tracking-widest mb-2">
+          <p className="text-xs text-[#4C8CE4] font-medium uppercase tracking-widest mb-2">
             Quote of the Day
           </p>
           <AnimatePresence mode="wait">
@@ -55,9 +55,9 @@ const DailyQuote: React.FC = () => {
                 exit={{ opacity: 0 }}
                 className="space-y-2"
               >
-                <div className="h-4 bg-white/5 rounded-lg w-full animate-pulse" />
-                <div className="h-4 bg-white/5 rounded-lg w-3/4 animate-pulse" />
-                <div className="h-3 bg-white/5 rounded-lg w-1/3 mt-3 animate-pulse" />
+                <div className="h-4 bg-[#E8F1FF] rounded-lg w-full animate-pulse" />
+                <div className="h-4 bg-[#E8F1FF] rounded-lg w-3/4 animate-pulse" />
+                <div className="h-3 bg-[#E8F1FF] rounded-lg w-1/3 mt-3 animate-pulse" />
               </motion.div>
             ) : data ? (
               <motion.div
@@ -66,15 +66,15 @@ const DailyQuote: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
               >
-                <p className="text-gray-300 text-sm sm:text-base leading-relaxed italic">
+                <p className="text-[#1A1A1A] text-sm sm:text-base leading-relaxed italic">
                   &ldquo;{data.quote}&rdquo;
                 </p>
-                <p className="text-gray-500 text-xs sm:text-sm mt-3 font-medium">
-                  — {data.author}
+                <p className="text-[#1A1A1A]/60 text-xs sm:text-sm mt-3 font-medium">
+                  - {data.author}
                 </p>
               </motion.div>
             ) : (
-              <p className="text-gray-500 text-sm">
+              <p className="text-[#1A1A1A]/60 text-sm">
                 Could not load today&apos;s quote.
               </p>
             )}

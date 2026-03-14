@@ -13,7 +13,7 @@ const Link: React.FC<LinkProps> = ({ href, text }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-1 text-blue-600 hover:underline"
+      className="inline-flex items-center gap-1 text-[#4C8CE4] hover:underline"
     >
       {text}
       <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
@@ -22,3 +22,4 @@ const Link: React.FC<LinkProps> = ({ href, text }) => {
 };
 
 export default Link;
+

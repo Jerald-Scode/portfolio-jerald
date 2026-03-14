@@ -77,7 +77,7 @@ const Head: React.FC<HeadProps> = ({
           alt="Cover"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f0f1a]/60 to-[#0f0f1a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#E8F1FF]/70 to-[#FFFFFF]" />
       </div>
 
       {/* Profile info area */}
@@ -90,15 +90,15 @@ const Head: React.FC<HeadProps> = ({
             transition={{ duration: 0.5, type: "spring" }}
             className="relative"
           >
-            <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full p-[3px] bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 shadow-lg glow">
+            <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full p-[3px] bg-gradient-to-br from-[#4C8CE4] via-[#7B61FF] to-[#E8F1FF] shadow-lg glow">
               <img
                 src={imageSrc}
                 alt="Profile"
-                className="w-full h-full rounded-full object-cover border-4 border-[#0f0f1a]"
+                className="w-full h-full rounded-full object-cover border-4 border-[#FFFFFF]"
               />
             </div>
             {/* Online indicator */}
-            <span className="absolute bottom-2 right-2 w-4 h-4 bg-green-400 rounded-full border-2 border-[#0f0f1a] pulse-ring" />
+            <span className="absolute bottom-2 right-2 w-4 h-4 bg-[#4C8CE4] rounded-full border-2 border-[#FFFFFF] pulse-ring" />
           </motion.div>
 
           {/* Name & meta */}
@@ -108,35 +108,35 @@ const Head: React.FC<HeadProps> = ({
             transition={{ delay: 0.2, duration: 0.5 }}
             className="flex-1 pb-2"
           >
-            <h1 className="text-2xl sm:text-3xl font-bold text-white">
+            <h1 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A]">
               {fullName}
-              <span className="ml-2 text-sm font-normal text-indigo-400">
+              <span className="ml-2 text-sm font-normal text-[#4C8CE4]">
                 (Je)
               </span>
             </h1>
-            <p className="text-gray-400 text-sm sm:text-base mt-1 max-w-xl">
+            <p className="text-[#1A1A1A]/80 text-sm sm:text-base mt-1 max-w-xl">
               {bio}
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 mt-3 text-gray-400 text-xs sm:text-sm">
+            <div className="flex flex-wrap items-center gap-4 mt-3 text-[#1A1A1A]/80 text-xs sm:text-sm">
               <span className="flex items-center gap-1.5">
                 <FontAwesomeIcon
                   icon={faBriefcase}
-                  className="w-3.5 h-3.5 text-indigo-400"
+                  className="w-3.5 h-3.5 text-[#4C8CE4]"
                 />
                 {position}
               </span>
               <span className="flex items-center gap-1.5">
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="w-3.5 h-3.5 text-indigo-400"
+                  className="w-3.5 h-3.5 text-[#4C8CE4]"
                 />
                 {location}
               </span>
               <span className="flex items-center gap-1.5">
                 <FontAwesomeIcon
                   icon={faCircle}
-                  className="w-2 h-2 text-green-400"
+                  className="w-2 h-2 text-[#4C8CE4]"
                 />
                 Open to work
               </span>
@@ -156,7 +156,7 @@ const Head: React.FC<HeadProps> = ({
                 href={s.href}
                 target="_blank"
                 aria-label={s.label}
-                className="w-10 h-10 flex items-center justify-center rounded-xl glass hover:bg-indigo-500/20 hover:border-indigo-500/40 transition-all duration-300 text-gray-400 hover:text-indigo-400"
+                className="w-10 h-10 flex items-center justify-center rounded-xl glass hover:bg-[#E8F1FF] hover:border-[#4C8CE4]/40 transition-all duration-300 text-[#1A1A1A]/80 hover:text-[#4C8CE4]"
               >
                 <FontAwesomeIcon icon={s.icon} className="w-4 h-4" />
               </Link>
@@ -179,15 +179,15 @@ const Head: React.FC<HeadProps> = ({
                   onClick={() => onTabChange?.(tab.key)}
                   className={`relative px-4 py-3 text-sm font-medium rounded-t-lg transition-all duration-300 ${
                     activeTab === tab.key
-                      ? "text-indigo-400"
-                      : "text-gray-500 hover:text-gray-300"
+                      ? "text-[#4C8CE4]"
+                      : "text-[#1A1A1A]/60 hover:text-[#1A1A1A]"
                   }`}
                 >
                   {tab.label}
                   {activeTab === tab.key && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"
+                      className="absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-r from-[#4C8CE4] to-[#7B61FF] rounded-full"
                       transition={{
                         type: "spring",
                         stiffness: 300,

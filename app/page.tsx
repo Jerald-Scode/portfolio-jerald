@@ -59,14 +59,15 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="section-divider mt-12" />
-      <div className="text-center py-8 text-gray-600 text-xs">
+      <div className="text-center py-8 text-[#1A1A1A]/55 text-xs">
         <p>
-          Built with <span className="text-indigo-400">Next.js</span>,{" "}
-          <span className="text-indigo-400">Tailwind CSS</span> &{" "}
-          <span className="text-indigo-400">Framer Motion</span>
+          Built with <span className="text-[#4C8CE4]">Next.js</span>,{" "}
+          <span className="text-[#4C8CE4]">Tailwind CSS</span> &{" "}
+          <span className="text-[#4C8CE4]">Framer Motion</span>
         </p>
-        <p className="mt-1 text-gray-700">
-          © {new Date().getFullYear()} Jerald Sto.domingo. All rights reserved.
+        <p className="mt-1 text-[#1A1A1A]/75">
+          (c) {new Date().getFullYear()} Jerald Sto.domingo. All rights
+          reserved.
         </p>
       </div>
     </div>

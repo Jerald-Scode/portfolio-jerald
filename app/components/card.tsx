@@ -27,16 +27,17 @@ export const Card: React.FC<CardProps> = ({
     >
       <div className="flex items-center gap-3 mb-4">
         {icon && (
-          <div className="w-8 h-8 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+          <div className="w-8 h-8 rounded-lg bg-[#4C8CE4]/20 flex items-center justify-center text-[#4C8CE4]">
             {icon}
           </div>
         )}
-        <h2 className="text-lg font-semibold text-white">{title}</h2>
+        <h2 className="text-lg font-semibold text-[#1A1A1A]">{title}</h2>
       </div>
       {description && (
-        <p className="text-gray-400 text-sm mb-4">{description}</p>
+        <p className="text-[#1A1A1A]/80 text-sm mb-4">{description}</p>
       )}
       {children}
     </motion.div>
   );
 };
+

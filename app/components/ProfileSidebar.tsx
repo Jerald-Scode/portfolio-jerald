@@ -5,10 +5,10 @@ export const ProfileSidebar: React.FC = () => {
   return (
     <aside className="space-y-6">
       <Card title="Personal details" className="bg-white/80">
-        <ul className="text-sm text-gray-700 space-y-3">
+        <ul className="text-sm text-[#1A1A1A]/75 space-y-3">
           <li className="flex items-center gap-3">
             <svg
-              className="w-5 h-5 text-gray-500"
+              className="w-5 h-5 text-[#1A1A1A]/60"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -25,7 +25,7 @@ export const ProfileSidebar: React.FC = () => {
           </li>
           <li className="flex items-center gap-3">
             <svg
-              className="w-5 h-5 text-gray-500"
+              className="w-5 h-5 text-[#1A1A1A]/60"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ export const ProfileSidebar: React.FC = () => {
           </li>
           <li className="flex items-center gap-3">
             <svg
-              className="w-5 h-5 text-gray-500"
+              className="w-5 h-5 text-[#1A1A1A]/60"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ export const ProfileSidebar: React.FC = () => {
             alt="project-2"
             className="w-full h-20 object-cover rounded-md"
           />
-          <div className="col-span-2 text-sm text-gray-600">
+          <div className="col-span-2 text-sm text-[#1A1A1A]/55">
             View portfolio for more projects
           </div>
         </div>
@@ -90,7 +90,7 @@ export const ProfileSidebar: React.FC = () => {
           ].map((s) => (
             <span
               key={s}
-              className="px-2 py-1 bg-gray-100 rounded text-gray-700"
+              className="px-2 py-1 bg-gray-100 rounded text-[#1A1A1A]/75"
             >
               {s}
             </span>
@@ -100,3 +100,4 @@ export const ProfileSidebar: React.FC = () => {
     </aside>
   );
 };
+

@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     title: "Tagaytay Complaint Management System",
     description:
-      "A thesis project for the City of Tagaytay — a full-featured complaint management system enabling residents to file, track, and resolve complaints digitally.",
+      "A thesis project for the City of Tagaytay - a full-featured complaint management system enabling residents to file, track, and resolve complaints digitally.",
     tech: ["ASP.NET", "MS-SQL", "HTML/CSS/BOOTSTRAP", "JavaScript"],
     image: "/project-img/Complaint.png",
     live: "#",
@@ -79,8 +79,8 @@ const Projects: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <h1 className="text-3xl font-bold gradient-text mb-2">Projects</h1>
-        <p className="text-gray-400">
-          A showcase of my work — from full-stack apps to creative experiments.
+        <p className="text-[#1A1A1A]/80">
+          A showcase of my work - from full-stack apps to creative experiments.
         </p>
       </motion.div>
 
@@ -104,8 +104,8 @@ const Projects: React.FC = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f1a] via-transparent to-transparent" />
-                <span className="absolute top-4 left-4 px-3 py-1 text-xs font-medium rounded-full bg-indigo-500/30 text-indigo-300 border border-indigo-500/30">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#E8F1FF]/80 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 px-3 py-1 text-xs font-medium rounded-full bg-[#4C8CE4]/20 text-[#4C8CE4] border border-[#4C8CE4]/35">
                   Featured
                 </span>
               </div>
@@ -113,10 +113,10 @@ const Projects: React.FC = () => {
             <div className="p-6">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                  <p className="text-[#1A1A1A]/80 text-sm mt-2 leading-relaxed">
                     {project.description}
                   </p>
                 </div>
@@ -124,7 +124,7 @@ const Projects: React.FC = () => {
                   {project.live && (
                     <a
                       href={project.live}
-                      className="w-9 h-9 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:border-indigo-500/40 transition-colors"
+                      className="w-9 h-9 rounded-lg glass flex items-center justify-center text-[#1A1A1A]/80 hover:text-[#4C8CE4] hover:border-[#4C8CE4]/40 transition-colors"
                       title="Live Demo"
                     >
                       <FontAwesomeIcon
@@ -136,7 +136,7 @@ const Projects: React.FC = () => {
                   {project.repo && (
                     <a
                       href={project.repo}
-                      className="w-9 h-9 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:border-indigo-500/40 transition-colors"
+                      className="w-9 h-9 rounded-lg glass flex items-center justify-center text-[#1A1A1A]/80 hover:text-[#4C8CE4] hover:border-[#4C8CE4]/40 transition-colors"
                       title="Source Code"
                     >
                       <FontAwesomeIcon
@@ -166,13 +166,15 @@ const Projects: React.FC = () => {
       {other.length > 0 && (
         <>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-[#7B61FF]/20 flex items-center justify-center">
               <FontAwesomeIcon
                 icon={faFolder}
-                className="w-4 h-4 text-purple-400"
+                className="w-4 h-4 text-[#7B61FF]"
               />
             </div>
-            <h2 className="text-lg font-semibold text-white">Other Projects</h2>
+            <h2 className="text-lg font-semibold text-[#1A1A1A]">
+              Other Projects
+            </h2>
           </div>
           <motion.div
             variants={container}
@@ -187,17 +189,17 @@ const Projects: React.FC = () => {
                 className="glass rounded-2xl p-5 hover-lift"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#4C8CE4]/25 to-[#7B61FF]/20 flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faCodeBranch}
-                      className="w-4 h-4 text-indigo-400"
+                      className="w-4 h-4 text-[#4C8CE4]"
                     />
                   </div>
                   <div className="flex gap-2">
                     {project.repo && (
                       <a
                         href={project.repo}
-                        className="text-gray-500 hover:text-indigo-400 transition-colors"
+                        className="text-[#1A1A1A]/60 hover:text-[#4C8CE4] transition-colors"
                         title="Source Code"
                       >
                         <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />
@@ -205,8 +207,10 @@ const Projects: React.FC = () => {
                     )}
                   </div>
                 </div>
-                <h3 className="text-white font-semibold">{project.title}</h3>
-                <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                <h3 className="text-[#1A1A1A] font-semibold">
+                  {project.title}
+                </h3>
+                <p className="text-[#1A1A1A]/80 text-sm mt-2 leading-relaxed">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">

@@ -23,28 +23,28 @@ const fadeUp = {
 
 const timeline = [
   {
-    year: "2025 – 2026",
-    title: "Junior Web Developer — CoreDev Solutions Inc",
+    year: "2025 - 2026",
+    title: "Junior Web Developer - CoreDev Solutions Inc",
     desc: "Managed CMS-based client websites, migrated a legacy Blade website to React, and rebuilt an e-services platform with an integrated online payment gateway and security middleware.",
     icon: faLaptopCode,
-    color: "text-indigo-400",
-    bg: "bg-indigo-500/10",
+    color: "text-[#4C8CE4]",
+    bg: "bg-[#4C8CE4]/12",
   },
   {
-    year: "2024 – 2025",
-    title: "IT Intern — Ospital Nang Tagaytay",
+    year: "2024 - 2025",
+    title: "IT Intern - Ospital Nang Tagaytay",
     desc: "Encoded data, maintained digital and physical records, designed layouts for stickers and intern IDs, and assisted in managing the department's digital systems.",
     icon: faBriefcase,
-    color: "text-purple-400",
-    bg: "bg-purple-500/10",
+    color: "text-[#7B61FF]",
+    bg: "bg-[#7B61FF]/12",
   },
   {
-    year: "2024 – 2025",
-    title: "BS Information Technology — City College of Tagaytay",
+    year: "2024 - 2025",
+    title: "BS Information Technology - City College of Tagaytay",
     desc: "Bachelor of Science in Information Technology. Developed a Tagaytay Complaint Management System as a thesis project.",
     icon: faGraduationCap,
-    color: "text-blue-400",
-    bg: "bg-blue-500/10",
+    color: "text-[#4C8CE4]",
+    bg: "bg-[#4C8CE4]/12",
   },
 ];
 
@@ -76,20 +76,22 @@ const About: React.FC = () => {
         className="glass rounded-2xl p-8"
       >
         <h1 className="text-3xl font-bold gradient-text mb-4">About Me</h1>
-        <p className="text-gray-300 leading-relaxed text-base">
+        <p className="text-[#1A1A1A] leading-relaxed text-base">
           Hi! I&apos;m{" "}
-          <span className="text-white font-semibold">Jerald Sto.domingo</span>,
-          a solution-oriented developer based in{" "}
-          <span className="text-indigo-400">Tagaytay City, Philippines</span>. I
+          <span className="text-[#1A1A1A] font-semibold">
+            Jerald Sto.domingo
+          </span>
+          , a solution-oriented developer based in{" "}
+          <span className="text-[#4C8CE4]">Tagaytay City, Philippines</span>. I
           have hands-on experience building full-stack web applications,
           migrating legacy systems to modern frameworks, and integrating payment
           APIs using technologies like{" "}
-          <span className="text-indigo-400">React / TypeScript</span>,{" "}
-          <span className="text-indigo-400">PHP / Laravel</span>,{" "}
-          <span className="text-indigo-400">MySQL</span>, and{" "}
-          <span className="text-indigo-400">C# / ASP.NET</span>.
+          <span className="text-[#4C8CE4]">React / TypeScript</span>,{" "}
+          <span className="text-[#4C8CE4]">PHP / Laravel</span>,{" "}
+          <span className="text-[#4C8CE4]">MySQL</span>, and{" "}
+          <span className="text-[#4C8CE4]">C# / ASP.NET</span>.
         </p>
-        <p className="text-gray-400 leading-relaxed text-base mt-4">
+        <p className="text-[#1A1A1A]/80 leading-relaxed text-base mt-4">
           At CoreDev Solutions Inc, I maintained CMS-based client websites,
           migrated a legacy Blade site to React, and rebuilt an e-services
           platform with an online payment gateway, security, and middleware
@@ -100,18 +102,18 @@ const About: React.FC = () => {
 
       {/* Timeline */}
       <div>
-        <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-          <span className="w-8 h-8 rounded-lg bg-indigo-500/20 flex items-center justify-center">
+        <h2 className="text-xl font-semibold text-[#1A1A1A] mb-6 flex items-center gap-2">
+          <span className="w-8 h-8 rounded-lg bg-[#4C8CE4]/20 flex items-center justify-center">
             <FontAwesomeIcon
               icon={faBriefcase}
-              className="w-4 h-4 text-indigo-400"
+              className="w-4 h-4 text-[#4C8CE4]"
             />
           </span>
           Journey
         </h2>
         <div className="relative space-y-6 ml-4">
           {/* Timeline line */}
-          <div className="absolute left-4 top-2 bottom-2 w-px bg-gradient-to-b from-indigo-500/50 via-purple-500/50 to-transparent" />
+          <div className="absolute left-4 top-2 bottom-2 w-px bg-gradient-to-b from-[#4C8CE4]/50 via-[#7B61FF]/50 to-transparent" />
 
           {timeline.map((item, i) => (
             <motion.div
@@ -132,11 +134,13 @@ const About: React.FC = () => {
                 />
               </div>
               <div className="glass rounded-xl p-5 flex-1 hover-lift">
-                <span className="text-xs text-gray-500 font-mono">
+                <span className="text-xs text-[#1A1A1A]/60 font-mono">
                   {item.year}
                 </span>
-                <h3 className="text-white font-semibold mt-1">{item.title}</h3>
-                <p className="text-gray-400 text-sm mt-1">{item.desc}</p>
+                <h3 className="text-[#1A1A1A] font-semibold mt-1">
+                  {item.title}
+                </h3>
+                <p className="text-[#1A1A1A]/80 text-sm mt-1">{item.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -145,11 +149,11 @@ const About: React.FC = () => {
 
       {/* What Drives Me */}
       <div>
-        <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-          <span className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center">
+        <h2 className="text-xl font-semibold text-[#1A1A1A] mb-6 flex items-center gap-2">
+          <span className="w-8 h-8 rounded-lg bg-[#7B61FF]/20 flex items-center justify-center">
             <FontAwesomeIcon
               icon={faHeart}
-              className="w-4 h-4 text-purple-400"
+              className="w-4 h-4 text-[#7B61FF]"
             />
           </span>
           What Drives Me
@@ -164,14 +168,16 @@ const About: React.FC = () => {
               variants={fadeUp}
               className="glass rounded-2xl p-6 text-center hover-lift"
             >
-              <div className="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-[#4C8CE4]/25 to-[#7B61FF]/20 flex items-center justify-center mb-4">
                 <FontAwesomeIcon
                   icon={p.icon}
-                  className="w-5 h-5 text-indigo-400"
+                  className="w-5 h-5 text-[#4C8CE4]"
                 />
               </div>
-              <h3 className="text-white font-semibold text-sm">{p.label}</h3>
-              <p className="text-gray-400 text-xs mt-2">{p.desc}</p>
+              <h3 className="text-[#1A1A1A] font-semibold text-sm">
+                {p.label}
+              </h3>
+              <p className="text-[#1A1A1A]/80 text-xs mt-2">{p.desc}</p>
             </motion.div>
           ))}
         </div>

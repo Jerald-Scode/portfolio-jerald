@@ -32,20 +32,20 @@ const ProjectCard: React.FC<{
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             alt={title}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f1a] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#E8F1FF]/80 via-transparent to-transparent" />
         </div>
       )}
       <div className="p-5">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <h3 className="font-semibold text-white">{title}</h3>
-            <span className="text-xs text-gray-500 font-mono">{date}</span>
+            <h3 className="font-semibold text-[#1A1A1A]">{title}</h3>
+            <span className="text-xs text-[#1A1A1A]/60 font-mono">{date}</span>
           </div>
           <div className="flex items-center gap-2 shrink-0">
             {live && (
               <a
                 href={live}
-                className="w-8 h-8 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-indigo-400 transition-colors"
+                className="w-8 h-8 rounded-lg glass flex items-center justify-center text-[#1A1A1A]/80 hover:text-[#4C8CE4] transition-colors"
                 title="Live Demo"
               >
                 <FontAwesomeIcon
@@ -57,7 +57,7 @@ const ProjectCard: React.FC<{
             {repo && (
               <a
                 href={repo}
-                className="w-8 h-8 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-indigo-400 transition-colors"
+                className="w-8 h-8 rounded-lg glass flex items-center justify-center text-[#1A1A1A]/80 hover:text-[#4C8CE4] transition-colors"
                 title="Source Code"
               >
                 <FontAwesomeIcon icon={faGithub} className="w-3.5 h-3.5" />
@@ -65,7 +65,7 @@ const ProjectCard: React.FC<{
             )}
           </div>
         </div>
-        <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+        <p className="text-[#1A1A1A]/80 text-sm mt-2 leading-relaxed">
           {description}
         </p>
         <div className="flex flex-wrap gap-2 mt-3">
@@ -91,34 +91,34 @@ export const ProfilePosts: React.FC = () => {
         <div className="flex items-center gap-2">
           <FontAwesomeIcon
             icon={faCodeBranch}
-            className="w-4 h-4 text-indigo-400"
+            className="w-4 h-4 text-[#4C8CE4]"
           />
-          <span className="text-sm font-medium text-white">
+          <span className="text-sm font-medium text-[#1A1A1A]">
             Recent Projects
           </span>
         </div>
-        <span className="text-xs text-gray-500">Newest first</span>
+        <span className="text-xs text-[#1A1A1A]/60">Newest first</span>
       </div>
 
       {/* Project cards */}
       <ProjectCard
         title="Tagaytay Complaint Management System"
-        date="2024 – 2025"
-        description="Thesis project — a full-featured complaint management system for the City of Tagaytay enabling residents to file, track, and resolve complaints digitally."
-        tech={["PHP", "MySQL", "HTML/CSS", "JavaScript"]}
-        image="/header-img/Cartoon Motorcyle.png"
+        date="2024 - 2025"
+        description="Thesis project - a full-featured complaint management system for the City of Tagaytay enabling residents to file, track, and resolve complaints digitally."
+        tech={["ASP.NET", "MS-SQL", "HTML/CSS/BOOTSTRAP", "JavaScript"]}
+        image="/project-img/Complaint.png"
         live="#"
         repo="#"
       />
 
-      <ProjectCard
+      {/* <ProjectCard
         title="E-Services Platform (React Rebuild)"
-        date="2025 – 2026"
+        date="2025 - 2026"
         description="Rebuilt an e-services platform using React, integrated an online payment gateway via API, and implemented security and middleware protections."
         tech={["React", "TypeScript", "REST APIs"]}
         live="#"
         repo="#"
-      />
+      /> */}
     </section>
   );
 };

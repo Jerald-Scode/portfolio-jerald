@@ -22,24 +22,24 @@ const contactLinks = [
     label: "Email",
     value: "jerald.stodomingo26@gmail.com",
     href: "mailto:jerald.stodomingo26@gmail.com",
-    color: "text-indigo-400",
-    bg: "bg-indigo-500/10",
+    color: "text-[#4C8CE4]",
+    bg: "bg-[#4C8CE4]/12",
   },
   {
     icon: faLocationDot,
     label: "Location",
     value: "Tagaytay City, Philippines",
     href: "#",
-    color: "text-purple-400",
-    bg: "bg-purple-500/10",
+    color: "text-[#7B61FF]",
+    bg: "bg-[#7B61FF]/12",
   },
   {
     icon: faPhone,
     label: "Phone",
     value: "Available upon request",
     href: "#",
-    color: "text-blue-400",
-    bg: "bg-blue-500/10",
+    color: "text-[#4C8CE4]",
+    bg: "bg-[#4C8CE4]/12",
   },
 ];
 
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <h1 className="text-3xl font-bold gradient-text mb-2">Get In Touch</h1>
-        <p className="text-gray-400">
+        <p className="text-[#1A1A1A]/80">
           Have a project in mind or want to collaborate? I&apos;d love to hear
           from you.
         </p>
@@ -122,15 +122,15 @@ const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <p className="text-gray-500 text-xs">{c.label}</p>
-                <p className="text-gray-300 text-sm font-medium">{c.value}</p>
+                <p className="text-[#1A1A1A]/60 text-xs">{c.label}</p>
+                <p className="text-[#1A1A1A] text-sm font-medium">{c.value}</p>
               </div>
             </a>
           ))}
 
           {/* Social links */}
           <div className="glass rounded-2xl p-5">
-            <p className="text-gray-500 text-xs mb-3">Find me on</p>
+            <p className="text-[#1A1A1A]/60 text-xs mb-3">Find me on</p>
             <div className="flex gap-3">
               {socialLinks.map((s) => (
                 <a
@@ -139,7 +139,7 @@ const Contact: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-10 h-10 rounded-xl glass flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:border-indigo-500/40 transition-all duration-300"
+                  className="w-10 h-10 rounded-xl glass flex items-center justify-center text-[#1A1A1A]/80 hover:text-[#4C8CE4] hover:border-[#4C8CE4]/40 transition-all duration-300"
                 >
                   <FontAwesomeIcon icon={s.icon} className="w-4 h-4" />
                 </a>
@@ -160,7 +160,7 @@ const Contact: React.FC = () => {
             className="glass rounded-2xl p-6 sm:p-8 space-y-5"
           >
             <div>
-              <label className="block text-sm text-gray-400 mb-2">
+              <label className="block text-sm text-[#1A1A1A]/80 mb-2">
                 Your Name
               </label>
               <input
@@ -170,11 +170,11 @@ const Contact: React.FC = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-[#E8F1FF] border border-[#4C8CE4]/20 text-[#1A1A1A] placeholder-[#1A1A1A]/45 focus:outline-none focus:border-[#4C8CE4] focus:ring-1 focus:ring-[#4C8CE4]/30 transition-all text-sm"
               />
             </div>
             <div>
-              <label className="block text-sm text-gray-400 mb-2">
+              <label className="block text-sm text-[#1A1A1A]/80 mb-2">
                 Email Address
               </label>
               <input
@@ -184,11 +184,11 @@ const Contact: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-[#E8F1FF] border border-[#4C8CE4]/20 text-[#1A1A1A] placeholder-[#1A1A1A]/45 focus:outline-none focus:border-[#4C8CE4] focus:ring-1 focus:ring-[#4C8CE4]/30 transition-all text-sm"
               />
             </div>
             <div>
-              <label className="block text-sm text-gray-400 mb-2">
+              <label className="block text-sm text-[#1A1A1A]/80 mb-2">
                 Message
               </label>
               <textarea
@@ -198,7 +198,7 @@ const Contact: React.FC = () => {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all text-sm resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-[#E8F1FF] border border-[#4C8CE4]/20 text-[#1A1A1A] placeholder-[#1A1A1A]/45 focus:outline-none focus:border-[#4C8CE4] focus:ring-1 focus:ring-[#4C8CE4]/30 transition-all text-sm resize-none"
               />
             </div>
             <motion.button
@@ -208,8 +208,8 @@ const Contact: React.FC = () => {
               disabled={sent}
               className={`w-full py-3.5 rounded-xl font-medium text-sm flex items-center justify-center gap-2 transition-all duration-300 ${
                 sent
-                  ? "bg-green-500/20 text-green-400 border border-green-500/30"
-                  : "bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-500 hover:to-purple-500 shadow-lg shadow-indigo-500/25"
+                  ? "bg-[#E8F1FF] text-[#4C8CE4] border border-[#4C8CE4]/35"
+                  : "bg-gradient-to-r from-[#4C8CE4] to-[#7B61FF] text-[#1A1A1A] hover:from-[#4C8CE4] hover:to-[#7B61FF] shadow-lg shadow-[#4C8CE4]/25"
               }`}
             >
               {sent ? (
@@ -232,3 +232,4 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+

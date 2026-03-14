@@ -32,43 +32,43 @@ const ProfileSidebarPortfolio: React.FC = () => {
       >
         <ul className="text-sm space-y-4">
           <li className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-[#4C8CE4]/12 flex items-center justify-center">
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="w-3.5 h-3.5 text-indigo-400"
+                className="w-3.5 h-3.5 text-[#4C8CE4]"
               />
             </div>
             <div>
-              <p className="text-gray-500 text-xs">Email</p>
-              <p className="text-gray-300 text-sm">
+              <p className="text-[#1A1A1A]/60 text-xs">Email</p>
+              <p className="text-[#1A1A1A] text-sm">
                 jerald.stodomingo26@gmail.com
               </p>
             </div>
           </li>
           <li className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-[#7B61FF]/12 flex items-center justify-center">
               <FontAwesomeIcon
                 icon={faLocationDot}
-                className="w-3.5 h-3.5 text-purple-400"
+                className="w-3.5 h-3.5 text-[#7B61FF]"
               />
             </div>
             <div>
-              <p className="text-gray-500 text-xs">Location</p>
-              <p className="text-gray-300 text-sm">
+              <p className="text-[#1A1A1A]/60 text-xs">Location</p>
+              <p className="text-[#1A1A1A] text-sm">
                 Tagaytay City, Philippines
               </p>
             </div>
           </li>
           <li className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-[#4C8CE4]/12 flex items-center justify-center">
               <FontAwesomeIcon
                 icon={faBriefcase}
-                className="w-3.5 h-3.5 text-green-400"
+                className="w-3.5 h-3.5 text-[#4C8CE4]"
               />
             </div>
             <div>
-              <p className="text-gray-500 text-xs">Availability</p>
-              <p className="text-green-400 text-sm font-medium">
+              <p className="text-[#1A1A1A]/60 text-xs">Availability</p>
+              <p className="text-[#4C8CE4] text-sm font-medium">
                 Open to work / Freelance
               </p>
             </div>
@@ -91,7 +91,7 @@ const ProfileSidebarPortfolio: React.FC = () => {
               className="w-full h-24 object-cover rounded-xl transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-end p-2">
-              <span className="text-white text-xs font-medium">Portfolio</span>
+              <span className="text-[#1A1A1A] text-xs font-medium">Portfolio</span>
             </div>
           </motion.div>
           <motion.div
@@ -104,12 +104,12 @@ const ProfileSidebarPortfolio: React.FC = () => {
               className="w-full h-24 object-cover rounded-xl transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-end p-2">
-              <span className="text-white text-xs font-medium">Attendance</span>
+              <span className="text-[#1A1A1A] text-xs font-medium">Attendance</span>
             </div>
           </motion.div>
         </div>
-        <p className="text-xs text-gray-500 mt-3 text-center">
-          Click &quot;Projects&quot; tab for more →
+        <p className="text-xs text-[#1A1A1A]/60 mt-3 text-center">
+          Click &quot;Projects&quot; tab for more  - †’
         </p>
       </Card>
 
@@ -136,3 +136,4 @@ const ProfileSidebarPortfolio: React.FC = () => {
 };
 
 export default ProfileSidebarPortfolio;
+
