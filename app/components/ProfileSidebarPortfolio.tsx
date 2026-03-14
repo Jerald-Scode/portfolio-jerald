@@ -13,14 +13,14 @@ import {
 import { motion } from "framer-motion";
 
 const skills = [
-  "React",
-  "Next.js",
-  "PHP",
+  "React / TypeScript",
+  "PHP / Laravel",
   "MySQL",
   "HTML/CSS/JS",
-  "TypeScript",
   "Tailwind CSS",
-  "Node.js",
+  "REST APIs",
+  "C# / ASP.NET",
+  "Git",
 ];
 
 const ProfileSidebarPortfolio: React.FC = () => {

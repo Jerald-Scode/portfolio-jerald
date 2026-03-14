@@ -22,37 +22,37 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Portfolio Website",
+    title: "Tagaytay Complaint Management System",
     description:
-      "A modern, responsive portfolio built with Next.js, Tailwind CSS, and TypeScript. Features glassmorphism design, smooth animations, and daily inspirational quotes.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    image: "/header-img/Cartoon Motorcyle.png",
+      "A thesis project for the City of Tagaytay — a full-featured complaint management system enabling residents to file, track, and resolve complaints digitally.",
+    tech: ["ASP.NET", "MS-SQL", "HTML/CSS/BOOTSTRAP", "JavaScript"],
+    image: "/project-img/Complaint.png",
     live: "#",
     repo: "#",
     featured: true,
   },
+  // {
+  //   title: "E-Services Platform (React Rebuild)",
+  //   description:
+  //     "Rebuilt an e-services platform using React, integrated an online payment gateway via API, and implemented security and middleware protections.",
+  //   tech: ["React", "TypeScript", "REST APIs", "Payment Gateway"],
+  //   image: "/project-img/Complaint.png",
+  //   live: "#",
+  //   repo: "#",
+  //   featured: true,
+  // },
   {
-    title: "Attendance System",
+    title: "Legacy Blade to React Migration",
     description:
-      "A student attendance & reporting tool designed for teachers. Includes CRUD operations, CSV data export, and interactive charts.",
-    tech: ["React", "Node.js", "MySQL", "Chart.js"],
-    image: "/header-img/jeep drive.jpg",
-    live: "#",
+      "Migrated a legacy Blade-based website to React, improving scalability, structure, and user interface for a client at CoreDev Solutions.",
+    tech: ["React", "Laravel", "TypeScript", "Tailwind CSS"],
     repo: "#",
-    featured: true,
   },
   {
-    title: "E-Commerce Dashboard",
+    title: "CMS Template",
     description:
-      "Admin panel with real-time analytics, product management, and user roles. Built with PHP and integrated with MySQL.",
-    tech: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-    repo: "#",
-  },
-  {
-    title: "Task Manager App",
-    description:
-      "A collaborative to-do list with drag-and-drop, due dates, and team sharing features.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
+      "A reusable CMS template for managing and maintaining client websites, handling updates, design improvements, and performance optimization.",
+    tech: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
     repo: "#",
   },
 ];

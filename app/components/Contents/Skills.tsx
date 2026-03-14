@@ -25,8 +25,7 @@ const categories: SkillCategory[] = [
     color: "text-indigo-400",
     bg: "from-indigo-500/20 to-indigo-500/5",
     skills: [
-      { name: "React / Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
+      { name: "React / TypeScript", level: 85 },
       { name: "HTML / CSS", level: 95 },
       { name: "Tailwind CSS", level: 90 },
       { name: "JavaScript", level: 88 },
@@ -38,10 +37,10 @@ const categories: SkillCategory[] = [
     color: "text-purple-400",
     bg: "from-purple-500/20 to-purple-500/5",
     skills: [
-      { name: "PHP", level: 82 },
-      { name: "Node.js", level: 70 },
+      { name: "PHP / Laravel", level: 82 },
       { name: "MySQL", level: 78 },
       { name: "REST APIs", level: 80 },
+      { name: "C# / ASP.NET", level: 70 },
     ],
   },
   {
@@ -50,10 +49,11 @@ const categories: SkillCategory[] = [
     color: "text-blue-400",
     bg: "from-blue-500/20 to-blue-500/5",
     skills: [
-      { name: "Git / GitHub", level: 85 },
+      { name: "Git & Source Control", level: 85 },
+      { name: "Web Performance", level: 78 },
       { name: "VS Code", level: 92 },
-      { name: "Figma", level: 60 },
-      { name: "Linux / CLI", level: 65 },
+      { name: "Excel", level: 80 },
+      { name: "Microsoft Office", level: 85 },
     ],
   },
 ];

@@ -81,12 +81,12 @@ export const ProfileSidebar: React.FC = () => {
       <Card title="Skills" className="bg-white/80">
         <div className="flex flex-wrap gap-2 text-xs">
           {[
-            "React",
-            "Next.js",
-            "TypeScript",
+            "React / TypeScript",
+            "PHP / Laravel",
+            "MySQL",
             "Tailwind CSS",
-            "Accessibility",
-            "UI/UX",
+            "REST APIs",
+            "C# / ASP.NET",
           ].map((s) => (
             <span
               key={s}

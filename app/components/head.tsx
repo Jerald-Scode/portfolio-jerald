@@ -42,17 +42,17 @@ const socials = [
     label: "Facebook",
   },
   {
-    href: "https://www.instagram.com/jerald_stodomingo",
+    href: "https://www.instagram.com/jeraldstodomingo/",
     icon: faSquareInstagram,
     label: "Instagram",
   },
   {
-    href: "https://linkedin.com/in/jerald-stodomingo",
+    href: "www.linkedin.com/in/jerald-sto-domingo-492a09347",
     icon: faLinkedinIn,
     label: "LinkedIn",
   },
   {
-    href: "https://github.com/jerald-stodomingo",
+    href: "https://github.com/Jerald-Scode",
     icon: faGithub,
     label: "GitHub",
   },
@@ -60,10 +60,10 @@ const socials = [
 
 const Head: React.FC<HeadProps> = ({
   coverImage = "/header-img/Cartoon Motorcyle.png",
-  imageSrc = "/header-img/jeep drive.jpg",
+  imageSrc = "/header-img/profile.jpg",
   fullName = "Jerald Sto.domingo",
-  bio = "A passionate web developer crafting dynamic, responsive, and user-friendly web experiences.",
-  position = "Web Developer",
+  bio = "Solution-oriented developer with hands-on experience building full-stack web applications, migrating legacy systems to modern frameworks, and integrating payment APIs.",
+  position = "Junior Web Developer",
   location = "Tagaytay City, Philippines",
   activeTab = "all",
   onTabChange,

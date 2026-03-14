@@ -102,20 +102,20 @@ export const ProfilePosts: React.FC = () => {
 
       {/* Project cards */}
       <ProjectCard
-        title="Portfolio Website"
-        date="Jan 2026"
-        description="A responsive portfolio built with Next.js, Tailwind CSS, and TypeScript. Features glassmorphism design, animated transitions, and a daily quotes API."
-        tech={["Next.js", "TypeScript", "Tailwind CSS"]}
+        title="Tagaytay Complaint Management System"
+        date="2024 – 2025"
+        description="Thesis project — a full-featured complaint management system for the City of Tagaytay enabling residents to file, track, and resolve complaints digitally."
+        tech={["PHP", "MySQL", "HTML/CSS", "JavaScript"]}
         image="/header-img/Cartoon Motorcyle.png"
         live="#"
         repo="#"
       />
 
       <ProjectCard
-        title="Attendance System (School)"
-        date="Dec 2025"
-        description="An attendance & reporting tool designed for teachers — demonstrates CRUD, CSV export, and charting."
-        tech={["React", "Node.js", "MySQL"]}
+        title="E-Services Platform (React Rebuild)"
+        date="2025 – 2026"
+        description="Rebuilt an e-services platform using React, integrated an online payment gateway via API, and implemented security and middleware protections."
+        tech={["React", "TypeScript", "REST APIs"]}
         live="#"
         repo="#"
       />

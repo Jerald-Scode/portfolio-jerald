@@ -23,25 +23,25 @@ const fadeUp = {
 
 const timeline = [
   {
-    year: "2024 – Present",
-    title: "Freelance Web Developer",
-    desc: "Building custom web solutions for clients using React, Next.js, and PHP.",
+    year: "2025 – 2026",
+    title: "Junior Web Developer — CoreDev Solutions Inc",
+    desc: "Managed CMS-based client websites, migrated a legacy Blade website to React, and rebuilt an e-services platform with an integrated online payment gateway and security middleware.",
     icon: faLaptopCode,
     color: "text-indigo-400",
     bg: "bg-indigo-500/10",
   },
   {
-    year: "2023 – 2024",
-    title: "Web Development Studies",
-    desc: "Deep-dived into modern frameworks, TypeScript, and full-stack development.",
-    icon: faCode,
+    year: "2024 – 2025",
+    title: "IT Intern — Ospital Nang Tagaytay",
+    desc: "Encoded data, maintained digital and physical records, designed layouts for stickers and intern IDs, and assisted in managing the department's digital systems.",
+    icon: faBriefcase,
     color: "text-purple-400",
     bg: "bg-purple-500/10",
   },
   {
-    year: "2022 – 2023",
-    title: "Started Programming Journey",
-    desc: "Learned the fundamentals of HTML, CSS, JavaScript, and PHP.",
+    year: "2024 – 2025",
+    title: "BS Information Technology — City College of Tagaytay",
+    desc: "Bachelor of Science in Information Technology. Developed a Tagaytay Complaint Management System as a thesis project.",
     icon: faGraduationCap,
     color: "text-blue-400",
     bg: "bg-blue-500/10",
@@ -79,20 +79,22 @@ const About: React.FC = () => {
         <p className="text-gray-300 leading-relaxed text-base">
           Hi! I&apos;m{" "}
           <span className="text-white font-semibold">Jerald Sto.domingo</span>,
-          a passionate web developer based in{" "}
+          a solution-oriented developer based in{" "}
           <span className="text-indigo-400">Tagaytay City, Philippines</span>. I
-          specialize in building responsive, performant, and accessible web
-          applications using modern technologies like{" "}
-          <span className="text-indigo-400">React</span>,{" "}
-          <span className="text-indigo-400">Next.js</span>,{" "}
-          <span className="text-indigo-400">TypeScript</span>, and{" "}
-          <span className="text-indigo-400">PHP</span>.
+          have hands-on experience building full-stack web applications,
+          migrating legacy systems to modern frameworks, and integrating payment
+          APIs using technologies like{" "}
+          <span className="text-indigo-400">React / TypeScript</span>,{" "}
+          <span className="text-indigo-400">PHP / Laravel</span>,{" "}
+          <span className="text-indigo-400">MySQL</span>, and{" "}
+          <span className="text-indigo-400">C# / ASP.NET</span>.
         </p>
         <p className="text-gray-400 leading-relaxed text-base mt-4">
-          I&apos;m driven by curiosity and a desire to create digital
-          experiences that make a difference. Whether it&apos;s a sleek
-          portfolio, a robust attendance system, or an innovative web app — I
-          bring dedication and attention to detail to every project.
+          At CoreDev Solutions Inc, I maintained CMS-based client websites,
+          migrated a legacy Blade site to React, and rebuilt an e-services
+          platform with an online payment gateway, security, and middleware
+          protections. I thrive on collaboration, clean code, and delivering
+          impactful digital experiences.
         </p>
       </motion.div>
 
