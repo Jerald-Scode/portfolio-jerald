@@ -60,7 +60,7 @@ const socials = [
 
 const Head: React.FC<HeadProps> = ({
   coverImage = "/header-img/Cartoon Motorcyle.png",
-  imageSrc = "/header-img/profile.jpg",
+  imageSrc = "/header-img/Profile.jpg",
   fullName = "Jerald Sto.domingo",
   bio = "Solution-oriented developer with hands-on experience building full-stack web applications, migrating legacy systems to modern frameworks, and integrating payment APIs.",
   position = "Junior Web Developer",
